@@ -62,16 +62,10 @@ public class HospitalSystem {
 	 * @return
 	 */
 	public String getAllPatientsData() {
-		StringBuilder str=new StringBuilder();
-	       for(Patient patient:patients)
-	       {
-	           str.append(patient.toString().replace("[", "").replace("]", "")+"\n");
-	       }
-	       return str.toString();
-		/*String str = "";
+		String str = "";
 		for(Patient patient : patients) {
 			str += patient.toString() + "\n";
 		}
-		return str;*/
+		return str;
 	} 
 }
